@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Form</title>
+</head>
+<style>
+body{
+    background-color:darkgoldenrod;
+    font-family:sans-serif;
+}
+h1,p{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+form{
+    text-align:center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:large;
+}
+
+input[type="text"],
+input[type="mail"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #06103cd4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+</style>
+<body>
+    <h1>Welcome To Music Class</h1>
+    <p>To join this music class you need to fill this form</p>
+    <form>
+        <label for="fname">Frist Name:</label>
+        <input type="text" id="fname" placeholder="Your frist name">
+        <br><br>
+        <label for="lname" >Last Name:</label>
+        <input type="text" id="lname" placeholder="Your last name">
+        <br><br>
+        <label for="mail">Email ID:</label>
+        <input type="mail" id="mail" placeholder=" Your Email id" >
+        <br><br>
+        <label for="pno">Phone No:</label>
+        <input type="tel" id="pno" placeholder="Your Phone No" >
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob"required>
+        <br><br>
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="10" placeholder="Type here.."></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
